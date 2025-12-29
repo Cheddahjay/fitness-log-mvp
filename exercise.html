@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+<div class="dashboard-grid">
+  
+  <aside class="sidebar">
+    <div class="logo">💪 FitLog Pro</div>
+    <div class="stats-card">
+      <label for="search-input" class="search-label">Find Entry</label>
+      <input type="text" id="search-input" placeholder="Search exercises...">
+      <h3>Weekly Stats</h3>
+      <p>Exercises: <span id="stat-count">0</span></p>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    
+    <section>
+        <h2 id="display-goal"></h2>
+        <input type="text" id="goal-input" placeholder="Current goal...">
+        <button id="set-goal-button">Set Goal</button>
+    </section>
+
+    <section id="library-manager">
+        <h3>Manage Exercise Library</h3>
+        <input type="text" id="new-exercise-name" placeholder="Exercise name...">
+        <button id="add-exercise">Add to list</button>
+    </section>
+
+    <section>
+        <h3>Log a Workout</h3>
+        <form action="" id="workout-form">
+            <select name="" id="exercise-select"></select>
+            <textarea name="" id="notes-input" placeholder="Reflection..."></textarea>
+            <label for="">
+                <input type="checkbox" id="goal-align-check">
+                Did this align with your goal?
+            </label>
+            <button type="submit" id="save-workout">Save Workout</button>
+        </form>
+    </section>
+
+    <section>
+        <div id="logs-container"></div>
+    </section>
+
+  </main>
+</div>
+
+<script type="module" src="js/controller.js"></script>
+</body>
+
+</html>
